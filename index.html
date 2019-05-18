@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRO DE ESTUDIANTES</title>
+
+    <style type="text/css">
+        .content{
+           float: right;
+        }
+
+        .wrap {
+           width: 200%;
+           margin: 0 500px;
+       }
+   </style>
+</head>
+
+<body bgcolor="gray">
+    <form class="content" id="formSesion" action="login.php" method="POST">
+        <label>Inicio de sesion</label><br>
+        <input type="text" placeholder="Usuario" size="12" id="txtUsuarioE" name="txtUsuarioE" required>                     
+        <input type="password" placeholder="Password" size="12" id="txtPasswordE" name="txtPasswordE" required>
+        <input type="submit" value="LOGIN" name="btnLogin"> <br>
+    </form> 
+    
+    <div class="wrap">
+        <br><br><h1>REGISTRO DE ESTUDIANTES</h1>
+        <form  id="formRegistro" action="registrar.php" method="POST">
+
+            <label for="txtEuros">Documento:</label>
+            <input type="number" placeholder="Digite el documento" size="25" id="txtDocumento" name="txtDocumento" required><br><br>    
+
+            <label for="txtPesos">Nombre:</label>
+            <input type="text" placeholder="Digite el nombre" size="28" id="txtNombre" name="txtNombre" required> <br> <br>
+                        
+            <label for="txtEuros">Apellidos:</label>
+            <input type="text" placeholder="Digite los apellidos" size="27" id="txtApellidos" name="txtApellidos" required><br><br>
+            
+            <label for="txtEuros">Telefono:</label>
+            <input type="number" placeholder="Digite el telefono" size="28" id="txtTelefono" name="txtTelefono" required><br><br>
+        
+            <label for="txtEuros">Dirección:</label>
+            <input type="text" placeholder="Digite la dirección" size="27" id="txtDireccion" name="txtDireccion" required><br><br>
+        
+            <label for="txtEuros">Usuario:</label>
+            <input type="text" placeholder="Digite la contraseña" size="25" id="txtUsuario" name="txtUsuario" required><br><br> 
+
+            <label for="txtEuros">Contraseña:</label>
+            <input type="password" placeholder="Digite la contraseña" size="25" id="txtPassword" name="txtPassword" required><br><br> 
+
+            <br><input type="submit" value="REGISTRAR" name="btnRegistrar"> <br>
+
+        </form>
+    </div>
+
+
+</body>
+</html>
